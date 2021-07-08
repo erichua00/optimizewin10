@@ -7,7 +7,7 @@ import jobs.views
 import blog.views
 
 urlpatterns = [
-    path('erichua/secure/secure/secure/admin', admin.site.urls),
+    #path('erichua/secure/secure/secure/admin', admin.site.urls),
     #path("",jobs.views.home,name='home'),
     #path("blog/", include('blog.urls')),
     path("", blog.views.win10optimize, name='home'),
