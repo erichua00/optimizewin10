@@ -11,7 +11,7 @@ urlpatterns = [
     #path("blog/", include('blog.urls')),
     path("", blog.views.win10optimize, name='home'),
     path("step_1", blog.views.step_1, name='step_1'),
-    #path("win10optimize/step_2", blog.views.step_2, name='step_2'),
+    path("step_2", blog.views.step_2, name='step_2'),
     #path("win10optimize/step_3", blog.views.step_3, name='step_3'),
     #path("win10optimize/step_4", blog.views.step_4, name='step_4'),
     #path("win10optimize/step_5", blog.views.step_5, name='step_5'),

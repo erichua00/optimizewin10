@@ -16,10 +16,10 @@ def win10optimize(request):
 
 def step_1(request):
         return render(request, 'blog/step_1.html')
-"""
+
 def step_2(request):
         return render(request, 'blog/step_2.html')
-
+"""
 def step_3(request):
         return render(request, 'blog/step_3.html')
 
