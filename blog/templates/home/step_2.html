@@ -1,0 +1,98 @@
+{%extends 'base.html'%}
+
+{%block content%}
+{% load static %}
+<main>
+  <div class="container animate-bottom">
+    <h1 class="text-center pt-5">Optimize Windows 10 Performance</h1>
+    <h3 class="text-center pt-3">(Especially for Laptops with Nvidia Graphic Card)</h3>
+    <h2 class="pt-5 text-center">Optimize Graphics Settings</h2>
+    <br><hr><br>
+
+    <h3>1. Download and Install Geforce Experience</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      <a href="https://www.nvidia.com/en-my/geforce/geforce-experience/download/"><b>Geforce Experience</b></a> is a software provided by <b>Nvidia</b> which can update your <b>Nvidia graphics card driver</b> to the latest version.
+      <br><br>
+      First, <b>Geforce Experience</b> need to be downloaded and installed.
+      <br><br>
+      Then, you can update graphics driver by opening <b>Geforce Experience</b> then proceed to <b>Drivers -> Download.</b>
+      <br><br>
+      After finish downloading the latest driver, click <b>"Express Installation"</b> and let the progress to be completed.
+      <br><br>
+      <img src="{%static 'geforceExp.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>2. Optimize Games Graphics in Geforce Experience</h3>
+    <p class="pt-5 ls text-justify" style="font-size:125%;">
+      You can optimize a game graphics by opening <b>Geforce Experience</b>, click on a game profile then click <b>"Optimize"</b>.
+      <br>
+      <br>
+      <img src="{%static 'geforceExpOptimize.png'%}" alt="" height="540", width="960">
+    </p><br>
+
+    <h3>3. Further Optimizations in Geforce Experience</h3>
+    <p class="pt-5 ls text-justify" style="font-size:125%;">
+      Recommend to turn off <b>Nvidia Shield, Whisper Mode, Battery Boost and In-game Overlay</b>.
+      <br><br>
+      If you are using these features you can leave them turn on.
+      <br><br>
+      <b>Nvidia Shield</b>: For streaming use.
+      <br><br>
+      <b>Whisper Mode</b>:   Ensure a quieter gaming by lowering the RPM of the fans.
+      <br><br>
+      <b>Battery Boost</b>:  Extend your battery life while gaming.
+      <br><br>
+      <b>In-game Overlay</b>: Provide in-game overlay to capture and share the videos, take screenshots and stream live with friends
+      <br><br>
+      Note that <b>turning on</b> these features on <b>may affect your gameplay</b> if you're not using a high-end laptop.
+      <br><br>
+      <img src="{%static 'geforceExpFeatures.png'%}" alt="" height="540", width="960">
+    </p><br>
+
+    <h3>3. Optimize Nvidia Control Panel Settings</h3>
+    <p class="pt-5 ls text-justify" style="font-size:125%;">
+      You should be able to find <b>Nvidia Control Panel</b> after finish installing <b>Geforce Experience</b> and updating graphics driver.
+      <br><br>
+      <b>1. Open Nvidia Control Panel:</b>
+      <br><br>
+      Search and open <b>Nvidia Control Panel</b> from the start or open it from the dekstop context menu.
+      <br><br>
+      <img src="{%static 'NvidiaCp.png'%}" alt="" height="540", width="960">
+      <br><br>
+      <b>2. Restore to Default Settings:</b>
+      <br><br>
+      First, in <b>Nvidia Control Panel</b> proceed to <b>Manage 3D settings -> Global Settings</b>, click<b>"Restore"</b> then click <b>"Yes"</b>.
+      <br><br>
+      Click <b>"Apply"</b> at the right side bottom to apply the settings.
+      <br><br>
+      <img src="{%static 'NvidiaCpRestore.png'%}" alt="" height="540", width="960">
+      <br><br>
+      <b>3. Change Low Latency Mode to Ultra:</b>
+      <br><br>
+      Proceed to <b>Low Latency Mode</b> Settings, and change it to <b>Ultra</b>, click <b>"Apply"</b> to apply the settings.
+      <br><br>
+      <img src="{%static 'NvidiaCpGs.png'%}" alt="" height="540", width="960">
+      <br><br>
+      <b>4. Custom Program Settings:</b>
+      <br><br>
+      Proceed to the <b>Program Settings</b> Tab, you can select your game and change the graphics settings here.
+      <br><br>
+      As an example, <b>Apex Legends</b> is selected here. If your graphics card cannot support up to the <b>1920*1080 resolution</b> and making your game blurry, you can apply <b>Image Sharpening</b> here.
+      <br><br>
+      Under <b>Image Sharpening</b> select <b>On</b>, change <b>Sharpen</b> and <b>Ignore film grain</b> to the value <b>1.0</b>. Press <b>"Ok"</b> then click <b>"Apply"</b> to apply the settings.
+      <br><br>
+      Leave all the settings to be <b>default</b> if your graphics card can support up to <b>1920*1080 resolution</b> of the game.
+      <br><br>
+      <img src="{%static 'NvidiaCpPs.png'%}" alt="" height="540", width="960">
+      <br><br>
+      Now you're finished with the <b>Nvidia Control Panel</b> settings.
+    </p>
+
+    <br><hr><br>
+    <div class="text-center">
+      <a href="{%url 'home'%}" class="btn btn-primary btn-lg my-2">Back</a>
+    </div>
+  </div>
+</main>
+
+{% endblock%}

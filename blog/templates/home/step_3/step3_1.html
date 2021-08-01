@@ -1,0 +1,98 @@
+{%extends 'base.html'%}
+
+{%block content%}
+{% load static %}
+<main>
+  <div class="container animate-bottom">
+    <h1 class="text-center pt-5">Optimize Windows 10 Performance</h1>
+    <h3 class="text-center pt-3">(Especially for Laptops with Nvidia Graphic Card)</h3>
+    <h2 class="pt-5 text-center">Optimize Windows Settings - System Settings</h2>
+    <br><hr><br>
+
+    <h3>1. Display Settings (System -> Display):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      First, search and open <b>Settings app</b> from the <b>Start</b>. Then proceed to <b>System settings</b>.
+      <br><br>
+      <img src="{%static 'searchSettings.png'%}" alt="" height="540", width="940">
+      <br><br>
+      <b>1. Stream HDR Video Settings:</b>
+      <br><br>
+      Go to <b>Windows HD color settings</b>, turn on <b>Stream HDR Video</b>.
+      <br><br>
+      In <b>Windows HD color settings</b>, go to <b>change calibration settings</b>, click <b>"Reset Calibration"</b>.
+      <br><br>
+      <img src="{%static 'streamHDR.png'%}" alt="" height="540", width="940">
+      <br><br>
+      <b>2. Advanced Scaling Settings:</b>
+      <br><br>
+      Go to <b>Advanced scaling settings</b>, turn on <b>let Windows try to fix apps so they're not blurry</b>.
+      <br><br>
+      <img src="{%static 'advancedScaling.png'%}" alt="" height="540", width="940">
+      <br><br>
+      <b>3. Advanced Display Settings:</b>
+      <br><br>
+      Go to <b>Advanced display settings</b>, change the <b>Refresh rate</b> to the highest refresh rate your PC can support.
+      <br><br>
+      <img src="{%static 'advancedDisplay.png'%}" alt="" height="540", width="940">
+      <br><br>
+      <b>4. Graphics Settings</b>:
+      <br><br>
+      Go to <b>Graphics settings</b>, turn on<b> Hardware-accelerated Scheduling GPU</b>.
+      <br><br>
+      You can browse and add your game .exe files here, then set them to <b>High Performance</b>.
+      <br><br>
+      <img src="{%static 'graphicsS.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>2. Notifications & actions Settings (System -> Notifications & actions):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      <b>Untick</b> all the settings on the figure shown below:
+      <br><br>
+      <img src="{%static 'n&a.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>3. Focus assists Settings (System -> Focus assists):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      Select <b>Priority only</b>.
+      <br><br>
+      <img src="{%static 'fAsist.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>4. Storage Settings (System -> Storage):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      Turn on <b>Storage Sense</b>.
+      <br><br>
+      <img src="{%static 'storageS.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>5. Multitasking Settings (System -> Multitasking):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      Turn off <b>Timeline</b>.
+      <br><br>
+      <img src="{%static 'multiT.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>6. Shared experiences Settings (System -> Shared experiences):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      Turn off <b>Nearby sharing</b>.
+      <br><br>
+      Turn off <b>share across devices</b>.
+      <br><br>
+      <img src="{%static 'sharedExp.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+    <h3>7. Clipboard Settings (System -> Clipboard):</h3>
+    <p class="pt-5 ls text-right" style="font-size:125%;">
+      Turn off <b>Sync across devices</b>.
+      <br><br>
+      <img src="{%static 'clipB.png'%}" alt="" height="540", width="940">
+    </p><br>
+
+  </div>
+  <br><hr><br>
+  <div class="text-center">
+    <a href="{%url 'step_3'%}" class="btn btn-primary btn-lg my-2">Back</a>
+  </div>
+</main>
+
+{% endblock%}
