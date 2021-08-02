@@ -93,11 +93,11 @@
   }
   </style>
 
-  <div id="loader"></div>
-  <div id="main_content">
+  <script data-ad-client="ca-pub-5796506592913471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
 
-  </head>
-
+<div id="loader"></div>
+<div id="main_content">
   <body onload="loadpage()">
 
     <header>
@@ -132,23 +132,21 @@
       </div>
     </footer>
 
-  </div>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    var myVar;
 
-  <script>
-  var myVar;
+    function loadpage() {
+      myVar = setTimeout(showPage, 1000);
+    }
 
-  function loadpage() {
-    myVar = setTimeout(showPage, 1000);
-  }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("main_content").style.display = "block";
+    }
+    </script>
 
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("main_content").style.display = "block";
-  }
-  </script>
-
-
-</body>
+  </body>
+</div>
 </html>
