@@ -48,7 +48,7 @@
     z-index: 1;
     width: 120px;
     height: 120px;
-    margin: -76px 0 0 -76px;
+    margin: -60px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
@@ -94,11 +94,23 @@
   }
 
   .center-fit {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 12.5vw;
+    max-height: 12.5vh;
     margin: auto;
   }
 
+  .autoTitle1
+  {
+    font-size:3vw;
+  }
+  .autoTitle2
+  {
+    font-size:2vw;
+  }
+  .autoContent
+  {
+    font-size:1.5vw;
+  }
   </style>
 
   <script data-ad-client="ca-pub-5796506592913471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -111,10 +123,10 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{%url 'home'%}">OptimizeWin10.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand autoContent" href="{%url 'home'%}">OptimizeWin10.</a>
+          <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button>-->
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ml-auto">
               <!-- <a class="nav-item nav-link" href="https://facebook.com">Facebook</a> -->
@@ -136,7 +148,7 @@
 
     <footer class="text-muted py-5">
       <div class="container text-center">
-        <p>
+        <p class="autoContent">
           CopyRight OptimizeWin10.com {%now "Y"%}
           <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="center-fit"/></a>
         </p>
