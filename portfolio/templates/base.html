@@ -148,21 +148,14 @@
     </nav>
   </header>
 
+  {% block content%}
+  {% endblock%}
 
-
-  <div class="container">
-    {% block content%}
-    {% endblock%}
-
-  </div>
-
-  <footer class="text-muted py-3">
-    <div class="container text-center">
-      <p class="pargh">
+  <footer>
+      <p class="text-muted py-3 text-center pargh">
         CopyRight OptimizeWin10.com {%now "Y"%}
         <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="autoImg"/></a>
       </p>
-    </div>
   </footer>
 
   <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
