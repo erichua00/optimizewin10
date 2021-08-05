@@ -98,11 +98,18 @@
     max-height: 90vh;
     margin: auto;
   }
-  .autoReferral
+
+  .headg
   {
-    max-width: 25vw;
-    max-height: 25vh;
-    margin: auto;
+    font-size:  x-large
+  }
+  .subhg
+  {
+    font-size:  large
+  }
+  .pargh
+  {
+    font-size: medium
   }
   </style>
 
@@ -126,7 +133,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand autoContent" href="{%url 'home'%}">OptimizeWin10.</a>
+          <a class="navbar-brand subhg" href="{%url 'home'%}">OptimizeWin10.</a>
           <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>-->
@@ -151,9 +158,9 @@
 
   <footer class="text-muted py-3">
     <div class="container text-center">
-      <p>
+      <p class="pargh">
         CopyRight OptimizeWin10.com {%now "Y"%}
-        <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge"/></a>
+        <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="autoImg"/></a>
       </p>
     </div>
   </footer>
