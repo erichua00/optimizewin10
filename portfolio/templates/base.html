@@ -151,8 +151,7 @@
   <body onload="loadpage()">
 
     <header>
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand subhg" href="{%url 'home'%}">OptimizeWin10.</a>
             <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,44 +166,33 @@
             </div>
           </div>
         </nav>
-      </div>
     </header>
 
-  <div class="row">
-    <div class="">
+    {% block content%}
+    {% endblock%}
 
-    </div>
-    <div class="col-12">
-      {% block content%}
-      {% endblock%}
-    </div>
-    <div class="">
+    <footer>
+        <p class="text-muted py-3 text-center pargh">
+          CopyRight OptimizeWin10.com {%now "Y"%}
+          <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="referral"/></a>
+        </p>
+    </footer>
 
-    </div>
-  </div>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <footer>
-      <p class="text-muted py-3 text-center pargh">
-        CopyRight OptimizeWin10.com {%now "Y"%}
-        <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="referral"/></a>
-      </p>
-  </footer>
+    <script>
+    var myVar;
 
-  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    function loadpage() {
+      myVar = setTimeout(showPage, 750);
+    }
 
-  <script>
-  var myVar;
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("main_content").style.display = "block";
+    }
+    </script>
 
-  function loadpage() {
-    myVar = setTimeout(showPage, 750);
-  }
-
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("main_content").style.display = "block";
-  }
-  </script>
-
-</body>
+  </body>
 </div>
 </html>
