@@ -131,6 +131,10 @@
     max-height: 90%;
     margin: auto;
   }
+  [class*="col-"] {
+    float: center;
+    padding: 12.5px;
+  }
   </style>
 
   <script data-ad-client="ca-pub-5796506592913471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -168,8 +172,18 @@
     </nav>
   </header>
 
-  {% block content%}
-  {% endblock%}
+  <div class="row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+      {% block content%}
+      {% endblock%}
+    </div>
+    <div class="col-2">
+
+    </div>
+  </div>
 
   <footer>
       <p class="text-muted py-3 text-center pargh">
