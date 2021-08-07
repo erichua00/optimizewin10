@@ -53,8 +53,12 @@
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    -webkit-animation: spin 2.25s linear infinite;
+    animation: spin 2.25s linear infinite;
+  }
+
+  #main_content {
+    display: none;
   }
 
   @keyframes spin {
@@ -70,9 +74,9 @@
   .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 0.75s;
     animation-name: animatebottom;
-    animation-duration: 1s
+    animation-duration: 0.75s
   }
 
   @-webkit-keyframes animatebottom {
@@ -88,10 +92,6 @@
   .ls
   {
     line-height:1.5;
-  }
-
-  #main_content {
-    display: none;
   }
 
   .headg
@@ -183,7 +183,7 @@
     var myVar;
 
     function loadpage() {
-      myVar = setTimeout(showPage, 500);
+      myVar = setTimeout(showPage, 750);
     }
 
     function showPage() {
