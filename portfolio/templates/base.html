@@ -36,12 +36,14 @@
     -moz-user-select: none;
     user-select: none;
   }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
+  @media (min-width: 768px)
+  {
+    .bd-placeholder-img-lg
+    {
       font-size: 3.5rem;
     }
   }
+
   #loader {
     position: absolute;
     left: 50%;
@@ -56,21 +58,9 @@
     -webkit-animation: spin 2.25s linear infinite;
     animation: spin 2.25s linear infinite;
   }
-
   #main_content {
     display: none;
   }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-
   .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
@@ -79,19 +69,21 @@
     animation-duration: 0.75s
   }
 
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
   @-webkit-keyframes animatebottom {
     from { bottom:-100px; opacity:0 }
     to { bottom:0px; opacity:1 }
   }
-
   @keyframes animatebottom {
     from{ bottom:-100px; opacity:0 }
     to{ bottom:0; opacity:1 }
-  }
-
-  .ls
-  {
-    line-height:1.5;
   }
 
   .headg
@@ -106,6 +98,7 @@
   {
     font-size: medium;
   }
+
   a.norm
   {
     color: blue;
