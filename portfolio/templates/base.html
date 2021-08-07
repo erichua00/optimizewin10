@@ -55,8 +55,8 @@
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
-    -webkit-animation: spin 1.13s linear infinite;
-    animation: spin 1.13s linear infinite;
+    -webkit-animation: spin 0.75s linear infinite;
+    animation: spin 0.75s linear infinite;
   }
   #main_content {
     display: none;
@@ -64,9 +64,9 @@
   .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 0.75s;
+    -webkit-animation-duration: 0.5s;
     animation-name: animatebottom;
-    animation-duration: 0.75s
+    animation-duration: 0.5s
   }
 
   @keyframes spin {
@@ -176,7 +176,7 @@
     var myVar;
 
     function loadpage() {
-      myVar = setTimeout(showPage, 750);
+      myVar = setTimeout(showPage, 500);
     }
 
     function showPage() {
