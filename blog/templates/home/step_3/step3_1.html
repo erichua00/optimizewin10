@@ -3,92 +3,164 @@
 {%block content%}
 {% load static %}
 <main>
-  <div class="container animate-bottom">
+<div class="container animate-bottom">
     <h1 class="text-center pt-5 headg">Optimize Windows 10 Performance</h1>
     <p class="text-center pt-3 pargh">(Especially for Laptops with Nvidia Graphics Card)</p>
-    <h2 class="text-center py-4 subhg">Optimize Windows Settings - System Settings</h2><hr>
+    <h2 class="text-center py-4 headg">3. Optimize Windows Settings - System Settings</h2>
 
-    <h3 class="pt-4 subhg">1. Display Settings (System -> Display):</h3>
-    <p class="pt-3 pargh">
-      First, search and open <b>Settings</b> app from the <b>Start</b>. Then proceed to <b>System -> Display</b> settings.
-      <br><br>
-      <img src="{%static 'searchSettings.png'%}" alt="" class="card">
-      <br><br>
-      <b>Stream HDR Video Settings:</b>
-      <br><br>
-      Go to <b>Windows HD color settings</b>, turn on <b>Stream HDR Video</b>.
-      <br><br>
-      In <b>Windows HD color settings</b>, go to <b>change calibration settings</b>, click <b>"Reset Calibration"</b>.
-      <br><br>
-      <img src="{%static 'streamHDR.png'%}" alt="" class="card">
-      <br><br>
-      <b>Advanced Scaling Settings:</b>
-      <br><br>
-      Go to <b>Advanced scaling settings</b>, turn on <b>let Windows try to fix apps so they're not blurry</b>.
-      <br><br>
-      <img src="{%static 'advancedScaling.png'%}" alt="" class="card">
-      <br><br>
-      <b>Advanced Display Settings:</b>
-      <br><br>
-      Go to <b>Advanced display settings</b>, change the <b>Refresh rate</b> to the highest refresh rate your PC can support.
-      <br><br>
-      <img src="{%static 'advancedDisplay.png'%}" alt="" class="card">
-      <br><br>
-      <b>Graphics Settings</b>:
-      <br><br>
-      Go to <b>Graphics settings</b>, turn on<b> Hardware-accelerated Scheduling GPU</b>.
-      <br><br>
-      You can browse and add your game .exe files here, then set them to <b>High Performance</b>.
-      <br><br>
-      <img src="{%static 'graphicsS.png'%}" alt="" class="card">
-    </p>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <h3 class="subhg">1. Display Settings (System -> Display):</h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <p class="pargh">
+              First, search and open <b>Settings</b> app from the <b>Start</b>. Then proceed to <b>System -> Display</b> settings.
+              <br><br>
+              <img src="{%static 'searchSettings.png'%}" alt="" class="card">
+              <br><br>
+              <b>Stream HDR Video Settings:</b>
+              <br><br>
+              Go to <b>Windows HD color settings</b>, turn on <b>Stream HDR Video</b>.
+              <br><br>
+              In <b>Windows HD color settings</b>, go to <b>change calibration settings</b>, click <b>"Reset Calibration"</b>.
+              <br><br>
+              <img src="{%static 'streamHDR.png'%}" alt="" class="card">
+              <br><br>
+              <b>Advanced Scaling Settings:</b>
+              <br><br>
+              Go to <b>Advanced scaling settings</b>, turn on <b>let Windows try to fix apps so they're not blurry</b>.
+              <br><br>
+              <img src="{%static 'advancedScaling.png'%}" alt="" class="card">
+              <br><br>
+              <b>Advanced Display Settings:</b>
+              <br><br>
+              Go to <b>Advanced display settings</b>, change the <b>Refresh rate</b> to the highest refresh rate your PC can support.
+              <br><br>
+              <img src="{%static 'advancedDisplay.png'%}" alt="" class="card">
+              <br><br>
+              <b>Graphics Settings</b>:
+              <br><br>
+              Go to <b>Graphics settings</b>, turn on<b> Hardware-accelerated Scheduling GPU</b>.
+              <br><br>
+              You can browse and add your game .exe files here, then set them to <b>High Performance</b>.
+              <br><br>
+              <img src="{%static 'graphicsS.png'%}" alt="" class="card">
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <h3 class="pt-4 subhg">2. Notifications & actions Settings (System -> Notifications & actions):</h3>
-    <p class="pt-3 pargh">
-      <b>Untick</b> all the settings on the figure shown below:
-      <br><br>
-      <img src="{%static 'n&a.png'%}" alt="" class="card">
-    </p>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <h3 class="subhg">2. Notifications & actions Settings (System -> Notifications & actions):</h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <p class="pargh">
+              <b>Untick</b> all the settings on the figure shown below:
+              <br><br>
+              <img src="{%static 'n&a.png'%}" alt="" class="card">
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <h3 class="pt-4 subhg">3. Focus assists Settings (System -> Focus assists):</h3>
-    <p class="pt-3 pargh">
-      Select <b>Priority only</b>.
-      <br><br>
-      <img src="{%static 'fAsist.png'%}" alt="" class="card">
-    </p>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <h3 class="subhg">3. Focus assists Settings (System -> Focus assists):</h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <p class="pargh">
+              Select <b>Priority only</b>.
+              <br><br>
+              <img src="{%static 'fAsist.png'%}" alt="" class="card">
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <h3 class="pt-4 subhg">4. Storage Settings (System -> Storage):</h3>
-    <p class="pt-3 pargh">
-      Turn on <b>Storage Sense</b>.
-      <br><br>
-      <img src="{%static 'storageS.png'%}" alt="" class="card">
-    </p>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            <h3 class="subhg">4. Storage Settings (System -> Storage):</h3>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <p class="pargh">
+              Turn on <b>Storage Sense</b>.
+              <br><br>
+              <img src="{%static 'storageS.png'%}" alt="" class="card">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h3 class="pt-4 subhg">5. Multitasking Settings (System -> Multitasking):</h3>
-    <p class="pt-3 pargh">
-      Turn off <b>Timeline</b>.
-      <br><br>
-      <img src="{%static 'multiT.png'%}" alt="" class="card">
-    </p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+          <h3 class="subhg">5. Multitasking Settings (System -> Multitasking):</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+        <div class="accordion-body">
+          <p class="pargh">
+            Turn off <b>Timeline</b>.
+            <br><br>
+            <img src="{%static 'multiT.png'%}" alt="" class="card">
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <h3 class="pt-4 subhg">6. Shared experiences Settings (System -> Shared experiences):</h3>
-    <p class="pt-3 pargh">
-      Turn off <b>Nearby sharing</b>.
-      <br><br>
-      Turn off <b>share across devices</b>.
-      <br><br>
-      <img src="{%static 'sharedExp.png'%}" alt="" class="card">
-    </p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+          <h3 class="subhg">6. Shared experiences Settings (System -> Shared experiences):</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+        <div class="accordion-body">
+          <p class="pargh">
+            Turn off <b>Nearby sharing</b>.
+            <br><br>
+            Turn off <b>share across devices</b>.
+            <br><br>
+            <img src="{%static 'sharedExp.png'%}" alt="" class="card">
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <h3 class="pt-4 subhg">7. Clipboard Settings (System -> Clipboard):</h3>
-    <p class="py-3 pargh">
-      Turn off <b>Sync across devices</b>.
-      <br><br>
-      <img src="{%static 'clipB.png'%}" alt="" class="card">
-    </p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+          <h3 class="subhg">7. Clipboard Settings (System -> Clipboard):</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+        <div class="accordion-body">
+          <p class="pargh">
+            Turn off <b>Sync across devices</b>.
+            <br><br>
+            <img src="{%static 'clipB.png'%}" alt="" class="card">
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <div class="text-center"><a href="{%url 'step_3'%}" class="btn btn-primary btn-lg my-3">Back</a></div>
-  </div>
+  <div class="text-center"><a href="{%url 'step_3'%}" class="btn btn-primary btn-lg my-3">Back</a></div>
+</div>
 </main>
 
 {% endblock%}
