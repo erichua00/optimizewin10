@@ -9,7 +9,7 @@
   <title>OptimizeWin10.</title>
 
 
-  
+
   <link rel="icon" href="{% static 'o.png' %}">
 
   <!-- Bootstrap CSS -->
@@ -40,11 +40,15 @@
   .headg{font-size:x-large}
   .subhg{font-size:large}
   .pargh{font-size:medium}
+  .autMPrgh{font-size:medium;margin:auto;}
   a.norm{color:#00f;text-decoration:none}
   a.norm:hover{color:#00008b}
   a.norm:active{color:red}
+  a.quickAcess{color:#00f;text-decoration:none}
+  a.quickAcess:hover{color:#00008b}
+  a.quickAcess:active{color:white}
   img.card{max-width:100%;max-height:100%;box-shadow:2.5px 2.5px 10px 0 rgba(0,0,0,.25)}
-  img.referral{max-width:100%;max-height:100%;width:200px;height:113px;}
+  img.referral{max-width:100%;max-height:100%;}
   </style>
 
   <!--google link preconnect-->
@@ -74,12 +78,22 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand subhg px-1" href="{%url 'home'%}">OptimizeWin10.</a>
-            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>-->
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <div class="navbar-nav ml-auto">
-              <!-- <a class="nav-item nav-link" href="https://facebook.com">Facebook</a> -->
+              <a class="nav-item nav-link active" href="{%url 'home'%}">Home</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Quick Access
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item quickAcess" href="{%url 'step_1'%}">1. Update Drivers and Windows</a></li>
+                  <li><a class="dropdown-item quickAcess" href="{%url 'step_2'%}">2. Optimize Graphics Settings</a></li>
+                  <li><a class="dropdown-item quickAcess" href="{%url 'step_3'%}">3. Optimize Windows Settings</a></li>
+                </ul>
+              </li>
               <!-- <a class="nav-item nav-link" href="{%static 'lock screen.jpg'%}">Resume</a> -->
               <!-- <a class="nav-item nav-link active" href="">Blog</a> -->
               </div>
@@ -92,7 +106,7 @@
     {% endblock%}
 
     <footer>
-        <p class="text-muted py-3 text-center pargh">
+        <p class="text-muted py-3 text-center">
           CopyRight OptimizeWin10.com {%now "Y"%}
           <a href="https://www.digitalocean.com/?refcode=b09dda54b7d3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" class="referral"/></a>
         </p>
