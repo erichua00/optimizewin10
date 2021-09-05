@@ -47,14 +47,13 @@
   }
   li.list-group-item{min-width:75vmin;margin:auto;}
   li.list-group-item:hover{background-color:#e7f1ff}
+  button.accordion-button:hover{background-color:#e7f1ff}
   a.dropdown-item{color:#00f}
   a.dropdown-item:hover{color:#0000D9;background-color:#e7f1ff}
   a.dropdown-item:active{color:#FF0071}
-  button.accordion-button:hover{background-color:#e7f1ff}
   a.norm{color:#00f;text-decoration:none}
   a.norm:hover{color:#0000D9}
   a.norm:active{color:#FF0071}
-  a.accord{color:#00f;text-decoration:none}
   img.card{max-width:100%;height:auto;box-shadow:2.5px 2.5px 10px 0 #1E1926}
   img.referral{max-width:100%;height:auto;}
   .greyColor{color:#7B7485;}
@@ -94,17 +93,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <div class="navbar-nav ml-auto">
-              <span class="pargh"><a class="nav-item nav-link active" href="{%url 'home'%}">Home</a></span>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active pargh" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quick Access</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item quickAcess" href="{%url 'step_1'%}">1. Update Drivers and Windows</a></li>
-                  <li><a class="dropdown-item quickAcess" href="{%url 'step_2'%}">2. Optimize Graphics Settings</a></li>
-                  <li><a class="dropdown-item quickAcess" href="{%url 'step_3'%}">3. Optimize Windows Settings</a></li>
-                </ul>
-              </li>
-              <!-- <a class="nav-item nav-link" href="{%static 'lock screen.jpg'%}">Resume</a> -->
-              <!-- <a class="nav-item nav-link active" href="">Blog</a> -->
+                <span class="pargh"><a class="nav-item nav-link active" href="{%url 'home'%}">Home</a></span>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle pargh active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quick Access</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item quickAcess" href="{%url 'step_1'%}">1. Update Drivers and Windows</a></li>
+                    <li><a class="dropdown-item quickAcess" href="{%url 'step_2'%}">2. Optimize Graphics Settings</a></li>
+                    <li><a class="dropdown-item quickAcess" href="{%url 'step_3'%}">3. Optimize Windows Settings</a></li>
+                  </ul>
+                </li>
+                <!-- <a class="nav-item nav-link" href="{%static 'lock screen.jpg'%}">Resume</a> -->
+                <!-- <a class="nav-item nav-link active" href="">Blog</a> -->
               </div>
             </div>
           </div>
