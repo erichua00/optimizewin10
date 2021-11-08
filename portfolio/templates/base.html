@@ -56,7 +56,8 @@
   a.norm:active{color:#FF0071}
   img.card{max-width:100%;height:auto;box-shadow:2.5px 2.5px 10px 0 #1E1926}
   img.referral{max-width:100%;height:auto;}
-  .greyColor{color:#7B7485;}
+  .grey{color:#7B7485;}
+  .blue{color:#00f}
   </style>
 
   <!--google link preconnect-->
@@ -66,16 +67,6 @@
   <link rel="preconnect" href="https://www.google.com">
   <!--google adsense-->
   <script data-ad-client="ca-pub-5796506592913471" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF6F2LDLHN"></script>
-  <script defer>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RF6F2LDLHN');
-  </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5796506592913471" crossorigin="anonymous"></script>
 </head>
@@ -97,9 +88,11 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle pargh active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quick Access</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item quickAcess" href="{%url 'step_1'%}">1. Update Drivers and Windows</a></li>
+                    <li><a class="dropdown-item quickAcess" href="{%url 'step_1'%}">1. Update Drivers & Windows</a></li>
                     <li><a class="dropdown-item quickAcess" href="{%url 'step_2'%}">2. Optimize Graphics Settings</a></li>
                     <li><a class="dropdown-item quickAcess" href="{%url 'step_3'%}">3. Optimize Windows Settings</a></li>
+                    <li><a class="dropdown-item quickAcess disabled" href="{%url 'step_3'%}">4. Optimize Network & Internet Settings</a></li>
+                    <li><a class="dropdown-item quickAcess disabled" href="{%url 'step_3'%}">5. Clean & Speed Up Your PC</a></li>
                   </ul>
                 </li>
                 <!-- <a class="nav-item nav-link" href="{%static 'lock screen.jpg'%}">Resume</a> -->
